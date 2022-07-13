@@ -1,15 +1,696 @@
-/* example class names */
-.button__send {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,200&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
 }
-.button__send:hover {
+
+header {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+}
+
+.navbar__search img{
+    float: right;
+    padding: 1em;
+}
+
+
+.navbar__logo{
+    padding: 0.5em;
+}
+
+/************************* NavBar  *************************/
+.container__navbar {
+    display: flex;
+    padding: 16px;
+}
+
+.navbar__items {
+    flex-direction: column;
+    width: 375px;
+    height: 346px;
+    margin-top: 30px;
+    padding: 16px;
+    display: none;
+    background-color: white;
+    z-index: 1
+}
+
+.navbar__link--heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #B378FF;
+}
+
+.navbar__link--arrowicon {
+    float: right;
+    font-size: 14px;
+}
+
+.navbar__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+.navbar__toggle {
+    position: absolute;
+    cursor: pointer;
+    color: #414141;
+    font-weight: 900;
+}
+
+.navbar__toggleShow {
+    display: flex;
+}
+
+.navbar__link--heading--hr {
+    width: 100%;
+    color: #E4E4E4;
+}
+
+/************************* Hero section *************************/
+.background__hero {
+    background-image: url('/images/background__hero--kids.jpg');
+    background-size: cover;
+    height: 543px;
+}
+
+/************************* content section *************************/
+.container__text , .container__img {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.container__text--title {
+    text-align: left;
+    color: #486DB7;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container__text--paragraph {
+    font-family: 'Merriweather';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.container__text--purpletext {
+    color: #B378FF;
+}
+
+
+.container__img--background {
+    width: 100%;
+}
+
+.container__img--figcaption {
+    background-color: #F1F1F1;
+}
+
+.container__img--figcaption--p {
+    color: #7D7D7D;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/************************* Testimonials contact *************************/
+.testimonials__section{
+    height: auto;
+    background-color: #F1F1F1;
+}
+.testimonials__content{
+   margin-top: 2em;
+   padding: 2em;
+   background-color:#F1F1F1;
+}
+
+.testimonials__content--p{
+font-family: 'Merriweather';
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #414141;
+}
+
+.testimonials__content--sign{
+font-family: 'Merriweather';
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #414141;
+}
+
+.testimonials__content--quote-i{
+color: #E4E4E4;
+font-size: 40px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+  }
   
+   .dot:hover {
+    background-color: #717171;
+  }
+
+/************************* last news section *************************/
+
+.last-news__section{
+    margin: 2em 0 2em 0;
 }
 
-.button__send--news {
-
+.last-news__section--tile{
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+text-align: center;
+letter-spacing: -0.02em;
+margin:2em;
+color: #486DB7;
 }
 
-.button__send--form {
+.card__container--span{
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: #F778B9;
+margin: 10px 0 10px 0;
+}
 
+.card__container--img{
+    width: 100%;
+}
+
+.card__container--h6{
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #414141;
+}
+
+.card__container--p{
+font-family: 'Merriweather';
+font-size: 16px;
+font-weight: 400;
+/* line-height: 32px; */
+letter-spacing: 0.02em;
+text-align: left;
+}
+
+/************************* contact section *************************/
+.section__contact {
+    width: 100%;
+    height: 500px;
+    background: #F1F1F1;
+    padding: 1em;
+}
+
+.container__contact {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact__form {
+    background: white;
+    padding: 25px;
+    margin: 50px 0;
+    border-radius: 20px;
+}
+
+.contact__form--title {
+    text-align: center;
+    color: #486DB7;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.contact__form--input {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px !important;
+}
+
+.contact__form--texarea {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+}
+
+.contact__form--input:focus,
+.contact__form--texarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+.container__button-send {
+    text-align: center;
+}
+
+.contact__form--send {
+    padding: 8px 16px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid #696969;
+    cursor: pointer;
+    background-color: #696969;
+    line-height: 1;
+}
+
+.contact__form--send span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact__form--send:hover {
+    background: #B378FF;
+}
+
+/********************FAQS section ************************/
+.container-section__FQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em
+}
+
+.container-section__FQ--title {
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: #486DB7;
+}
+
+.faq__content {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+    cursor: pointer;
+}
+
+.faq__content.active .answer {
+    max-height: 300px;
+}
+
+.faq__content--question {
+    align-items: center;
+    font-weight: 700;
+    color: #414141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__content--answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.faq__content--answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.faq__content.active .faq__content--answer{
+  max-height: 300px;
+}
+
+
+/***************** Footer *****************/
+footer {
+    /* width: 1340px; */
+    height: 244px;
+    background-color: #265E6C;
+}
+.footer__content--logo{
+    width: 50%;
+    height: 122px;
+    float: left;
+}
+
+.footer__content--p{
+    width: 50%;
+    height: 122px;
+    float: right;
+}
+
+.footer__content--p p{
+    width: 454px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-top: 3.5em;
+}
+
+.footer__content--logo img{
+width: 190px;
+height: 32px;
+float: right;
+margin: 3.5em 1em 0 0;
+}
+
+.footer__links{
+    height: auto;
+    clear: both;
+    text-align: center;
+}
+
+.links__list li{
+display:inline;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: white;
+padding: 1em;
+}
+
+.container__separator{
+    text-align: center;
+}
+
+
+/***************** Mobile First Responsive *****************/
+@media (max-width:320px) {
+    header {
+        height: 50px;
+    }
+    
+    .navbar__logo img{
+       width: 100%;
+    }
+
+    .navbar__search img{
+        width: 70%;
+     }
+    /******NavBar******/
+
+    .navbar__items {
+        width: 100%;
+        height: auto;
+    }
+
+    /********Hero section********/
+    .background__hero {
+        background-image: url('/images/backgound__mobile.png');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+
+    /******* content section *******/
+    .container__text,
+    .container__img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .container__text--title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .container__text--paragraph {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .container__img--background,
+    .container__img--figcaption,
+    .container__img--figcaption--p {
+        display: none;
+    }
+
+    /*******Testimonials contact*******/
+
+    .testimonials__content {
+        margin-top: 0;
+    }
+
+    /*********** Last news section ************/
+
+    .last-news__section {
+        margin: 0em;
+    }
+
+    .last-news__section--tile {
+        margin: 0.5em;
+    }
+
+    /*******FAQS section ***********/
+    .container-section__FQ {
+        margin-bottom: 1em;
+    }
+
+    .container-section__FQ--title {
+        font-size: 30px;
+        text-align: center;
+        margin: 1rem 0;
+        color: #486DB7;
+    }
+
+    .faq__content {
+        max-width: 280px;
+    }
+
+    .faq__content--answer p {
+        font-size: 17px;
+    }
+
+    /*********** Footer ***********/
+    footer {
+        height: auto;
+    }
+
+    .footer__content--logo {
+        width: 90%;
+        float: none;
+        text-align: center;
+        height: 80px;
+    }
+
+    .footer__content--p {
+        width: 90%;
+        height: auto;
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    .footer__content--p p {
+        width: 100%;
+        margin: 1em;
+    }
+
+    .footer__content--logo img {
+        float: none;
+        margin-top: 1em;
+    }
+
+    .links__list {
+        margin-left: -15px
+    }
+
+    .links__list li {
+        font-size: 13px;
+        line-height: 15px;
+        padding: 1em;
+        width: 97%;
+        margin-left: -15px;
+    }
+
+    .container__separator {
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+
+    /*********** Hero section ************/
+    .background__hero {
+        background-image: url('/images/background__hero--kids.jpg');
+        background-size: cover;
+        height: 350px;
+    }
+    
+    /*********** content section ************/
+    .container__text , .container__img {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .container__img {
+        margin-top: 5em;
+    }
+    
+    .container__text--title {
+        font-size: 25px;
+    }
+    
+    .container__text--paragraph {
+        font-size: 15px;
+    }
+    
+    /************lasT news section***********/
+    
+    .last-news__section{
+        margin: 2em 0 2em 0;
+    }
+
+    /********************FAQS section ************************/
+    
+    .container-section__FQ--title {
+        font-size: 2rem;
+    }
+    
+    .faq__content--answer p{
+        font-size: 1rem;
+    }
+    
+    /***************** Footer *****************/
+    footer {
+        height: auto;
+    }
+
+    .footer__content--p p{
+        width: 90%;
+    }
+    
+    .footer__content--logo img{
+        width: 190px;
+        height: 32px;
+        float: right;
+        margin: 3.5em 1em 0 0;
+    }
+
+    .container__separator img{
+        width: 100%;
+        text-align: center;
+    } 
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+
+    /************************* Hero section *************************/
+    .background__hero {
+        background-image: url('/images/background__hero--kids.jpg');
+        height: 350px;
+        background-position: center;
+    }
+
+    /************************* content section *************************/
+    .container__text , .container__img {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .container__text--title {
+        text-align: left;
+        color: #486DB7;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .container__text--paragraph {
+        font-family: 'Merriweather';
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .container__text--purpletext {
+        color: #B378FF;
+    }
+
+
+    .container__img--background {
+        width: 100%;
+    }
+
+    .container__img--figcaption {
+        background-color: #F1F1F1;
+    }
+
+    .container__img--figcaption--p {
+        color: #7D7D7D;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    /********************FAQS section ************************/
+
+    .container-section__FQ--title {
+        font-size: 2rem;
+    }
+
+    .faq__content--answer p{
+        padding-top: 1rem;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer__content--p p{
+        width: 90%;
+    }
+
+    .footer__content--logo img{
+        width: 190px;
+        height: 32px;
+        float: right;
+        margin: 3.5em 1em 0 0;
+    }
+
+    .container__separator img{
+        width: 100%;
+        text-align: center;
+    } 
 }
