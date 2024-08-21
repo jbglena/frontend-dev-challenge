@@ -78,7 +78,7 @@ header {
 
 /************************* Hero section *************************/
 .background__hero {
-    background-image: url('/images/background__hero--kids.jpg');
+    background-image: url('../images/background__hero--kids.jpg');
     background-size: cover;
     height: 543px;
 }
@@ -435,7 +435,7 @@ padding: 1em;
 
     /********Hero section********/
     .background__hero {
-        background-image: url('/images/backgound__mobile.png');
+        background-image: url('../images/backgound__mobile.png');
         background-size: cover;
         background-position: center;
         height: 400px;
@@ -616,7 +616,7 @@ padding: 1em;
 
     /************************* Hero section *************************/
     .background__hero {
-        background-image: url('/images/background__hero--kids.jpg');
+        background-image: url('../images/background__hero--kids.jpg');
         height: 350px;
         background-position: center;
     }
